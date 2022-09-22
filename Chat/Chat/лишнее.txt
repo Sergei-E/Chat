@@ -1,0 +1,249 @@
+ /* if($result2 = mysqli_query($conn,$sql2)){
+               foreach ($result2 as $row1){
+                $_SESSION['ChatName'] = $row1["ChatName"];
+                echo "<p>".$row1["ChatName"]."</p>";
+              }
+       }
+       else{
+        echo "Ошибка: " . mysqli_error($conn);
+       }*/
+       
+       
+       
+       /*Рабочий код на дублированеи чатов*/ 
+       /*if( $result->num_rows > 0 ){
+            echo "Чат уже создан";
+        }
+        else{ 
+            mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('".$R."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+        if(mysqli_query($conn, $sql)){
+        $POl="Данные успешно добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        else{
+        $POl="Данные не добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        }*/
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        /*$sql1 = */
+        /*if(!mysqli_fetch_array($conn,"SELECT * FROM `litschat` WHERE ChatName = ".$R.";")){
+    
+            echo "Чат уже создан";
+        }
+        else{
+            echo "Чат не создан";
+        }*/
+       /*mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('".$R."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+        if(mysqli_query($conn, $sql)){
+        $POl="Данные успешно добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        else{
+        $POl="Данные не добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } */
+        /* if(mysqli_query ($conn,"SELECT * FROM `litschat` WHERE ChatName = ".$R.";")){
+            $E= "f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']; 
+        
+    }
+    else {
+        echo "Чат уже создан";
+    }*/
+    /*try{
+        mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('".$E."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+        if(mysqli_query($conn, $sql)){
+        $POl="Данные успешно добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        else{
+        $POl="Данные не добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        }  
+    }
+    catch (DivisionByZeroError $f){
+        echo "Чат уже создан";
+    }
+        $conn->close();
+        ?>
+        
+    
+    
+    
+    
+    </h1>
+        <p> <?php
+        /*session_start(); 
+       
+        $conn = new mysqli($_SESSION['LocHos'], $_SESSION['Polzov'], $_SESSION['Password'], $_SESSION['BazaDan']);
+        $sql = "SELECT * FROM `litschat`;";
+        if($result = $conn->query($sql)){
+            foreach($result as $row){
+             if ($R == $row["ChatName"]){
+                 echo "Чат  уже создан1</br>";
+             }
+             else{
+                echo "чат не создан4</br>";
+                mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+               if(mysqli_query($conn, $sql)){
+               $POl="Данные успешно добавлены";
+            echo ("<script>console.log('".$POl."');</script>");
+            } 
+            else{
+            $POl="Данные не добавлены";
+            echo ("<script>console.log('".$POl."');</script>");
+            } 
+            }
+        }
+        }   
+        else{
+            echo "Ошибка: " . $conn->error;
+        }
+        
+        /*if(!mysqli_query($conn,'SELECT * FROM `litschat` WHERE `ChatName` = "f89246121712h89246121712";'))
+        {
+            echo "чат не создан2</br>";
+            echo "Чат  уже создан3</br>";
+            echo "Ошибка: " . $conn->error;
+        }
+        else {
+            echo "Ошибка: " . $conn->error;
+            echo "Чат  уже создан1</br>";
+            echo "чат не создан4</br>";
+        }
+       */
+       /*ECHO "Имя чата: ".$R;*/
+       /* $sql = "SELECT * FROM `litschat` WHERE 1;";
+        if($result = $conn->query($sql)){
+            foreach($result as $row){
+                /*$_SESSION['ID'] = $row["IDUser"];*/
+                /*$_SESSION['IDPoluh'] = $row["IDpoluh"];
+                echo $_SESSION['IDPoluh'];*/ 
+           /* }
+            $result->free();
+        } else{
+            echo "Ошибка: " . $conn->error;
+        }*/
+
+
+       /*mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+        if(mysqli_query($conn, $sql)){
+            $POl="Данные успешно добавлены";
+            echo ("<script>console.log('".$POl."');</script>");
+            } 
+            else{
+            $POl="Данные не добавлены";
+            echo ("<script>console.log('".$POl."');</script>");
+            } */
+            /*echo "Отравитель".$_SESSION['LoginSot2']."</br>"; 
+        echo "Получатель".$_SESSION['Telefon1']."</br>";
+        /*if(!mysqli_query($conn,"Select * From f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']. ";")){
+                $sql="create table f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']."
+                (ID INTEGER  AUTO_INCREMENT PRIMARY KEY,
+                IDUser int,
+                IDPoluh int(100),
+                Messages VARCHAR(100),
+                Date DATE,
+                INDEX(`IDUser`),
+                INDEX(`IDPoluh`))";
+                if(mysqli_query($conn, $sql)){
+                echo "Таблица успешно создана.";
+                } else{
+                echo "ERROR: Не удалось выполнить $sql. " . mysqli_error($conn);
+                }
+                $svyz= "ALTER TABLE f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']." ADD FOREIGN KEY (`IDUser`) REFERENCES `user`(`IDUser`) ON DELETE RESTRICT ON UPDATE CASCADE;";
+                if(mysqli_query($conn, $svyz)){
+                echo "Связь Отправителя установлена.";
+                } else{
+                echo "ERROR: Не удалось выполнить $sql. " . mysqli_error($conn);
+                }
+                $svyzPoluh= "ALTER TABLE f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1']." ADD FOREIGN KEY (`IDPoluh`) REFERENCES `user`(`IDUser`) ON DELETE RESTRICT ON UPDATE CASCADE;";
+                if(mysqli_query($conn, $svyzPoluh)){
+                echo "Связь получателя установлена.";
+                } else{
+                echo "ERROR: Не удалось выполнить $sql. " . mysqli_error($conn);
+                }
+            }
+            else{
+                echo "Таблица уже создана";/*Дописать код на отправку сообщения*/ 
+                /*добавить обработчик на дублирование имен таблиц*/
+           /* }*/ 
+           /* }  */     
+    /*else {
+        echo "Идет дублирование";
+    }*/
+
+
+    /*if($result1 = $conn->query($sql1)){
+            foreach($result1 as $row1){
+                $_SESSION['ID'] = $row1["ID"];
+                $_SESSION['ChatName'] = $row1["ChatName"]; 
+                echo $row1["ID"]." ID чата</br>";
+                echo $row1["ChatName"]." Имя чата</br>";
+                /*echo $row1["IDsozdat"]." ID создателя </br>";
+                echo $row1["IDpoluh"]." ID получателя </br>";*/
+               /*if($row1["IDsozdat"] == $_SESSION['IDUser'] && $row1["IDpoluh"] == $row["IDUser"] || $row1["IDsozdat"] == $row["IDUser"] && $row1["IDpoluh"] == $_SESSION['IDUser'])
+        {
+            echo"Да</br>";
+            echo "Имя чата ".$row1["ChatName"]."</br>";
+        }
+        else{
+            echo"Нет</br>";
+            /*random_number();*/
+        
+           /* }
+            $result1->free();
+        } else{
+            echo "Ошибка: " . $conn->error;
+        } */
+
+
+
+
+       /* $R= "f".$_SESSION['LoginSot2']."h".$_SESSION['Telefon1'];/*Отрправитель*/
+       /* $_SESSION['ROT']= $R;
+       /*ECHO "Имя чата: ".$R;*/
+       /*$sql1 = "SELECT * FROM `litschat` WHERE ChatName = '".$R."' limit 1;";
+       $result = mysqli_query($conn,$sql1);
+       $F =  "f".$_SESSION['Telefon1']."h".$_SESSION['LoginSot2'];/*Получатель*/
+       /*$sql2 = "SELECT * FROM `litschat` WHERE ChatName = '".$F."' limit 1;";
+       $result2 = mysqli_query($conn,$sql2);
+       if ( $result2->num_rows > 0 ){
+        echo "Чат уже создан";
+        foreach($result2 as $row)
+        {
+            echo $row['ChatName'];
+        }
+        }
+       else{
+        if( $result->num_rows > 0 ){
+              echo "Чат уже возможно создан";
+              foreach($result as $row)
+        {
+            echo $row['ChatName'];
+        }
+        }
+        else{ 
+            $conn1 = new mysqli($_SESSION['LocHos'], $_SESSION['Polzov'], $_SESSION['Password'], $_SESSION['BazaDan']);
+            mysqli_query($conn,"INSERT INTO litschat (ChatName, IDsozdat, IDpoluh, DataSozdan) VALUES ('".$R."','".$_SESSION['IDUser']."','".$_SESSION['IDPoluh']."','".date('d.m.Y')."');");
+        if(mysqli_query($conn, $sql)){
+        $POl="Данные успешно добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        else{
+        $POl="Данные не добавлены";
+        echo ("<script>console.log('".$POl."');</script>");
+        } 
+        }
+       }*/
